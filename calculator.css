@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    width: 100%;
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    background-image: linear-gradient(45deg , rgb(57, 54, 54),rgb(30, 28, 28));
+}
+
+.sub{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: auto auto auto auto;
+    height: 70vh;
+    width: 50vh;
+    border: 2px solid grey;
+    border-radius: 25px;
+    background-color: rgb(194, 182, 182);
+    box-shadow: 0px 0px 20px rgb(53, 158, 42);
+}
+
+input{
+    grid-column: 1/5;
+    font-size: 2rem;
+    height: 12vh;
+    width: 370px;
+    border: none;  
+    background: rgb(22, 12, 12);
+    border-radius: 20px;
+    color: white;
+    border: 2px solid black;
+    text-align: right;
+}
+
+
+button{
+    position: relative;
+    left: 15px;
+    background: transparent;
+    border-radius: 50%;
+    border: none;
+    height: 8vh;
+    width: 8vh;
+    box-sizing: border-box;
+    box-shadow: 0px 2px 10px black;
+    font-size: x-large ;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.operator{
+    background-color: orangered;
+    color: rgb(113, 245, 37);
+}
+
+h1{
+    position: absolute;
+    color: rgb(0, 0, 0);
+    top: 70px;
+    animation: neon 10s linear 0s infinite normal;  
+}
+
+@keyframes neon{
+    20%{
+        text-shadow: 0px 0px 20px #d52929;
+    }
+    40%{
+        text-shadow: 0px 0px 20px #2bb513;
+    }
+    60%{
+        text-shadow: 0px 0px 50px #091888;
+    }
+    80%{
+        text-shadow: 0px 0px 20px #b6a80e;
+    }
+    100%{
+        text-shadow: 0px 0px 50px #63096f;
+    }
+}
